@@ -50,7 +50,7 @@ class PostService {
    */
   Post notify(Post post) {
     def json = (post as JSON).toString(true)
-    def future = broadcaster[WS_URI].broadcast(json).get()
+    broadcaster[WS_URI].broadcast(json)
     post
   }
 

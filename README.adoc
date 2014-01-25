@@ -1,0 +1,3 @@
+= Grails Spring Integration Cache First Message Driven Architecture
+
+This application uses Spring Integration and Atmosphere within Grails to employ a message driven architecture. The application has a _New Post Workflow_, wherein a client can create a "post" (ostensibly, just a string of text), and that post will be stored to cache, and websocket clients will be notified with the content of the post.
